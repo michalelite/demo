@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Structure</title>
+    <!-- internal css -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+        }
+        header h1{
+            text-align: center;
+            font-size: 64px;
+            padding: 16px 0px;
+            font-weight: 900;
+        }
+        header+nav{
+            display: flex;
+            justify-content: center;
+        }
+        header+nav li{
+            list-style: none;
+            display: inline-block;
+            padding: 16px 32px;
+        }
+        header+nav a{
+            color: #777;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        header+nav li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            display: block;
+            background-color: #ff3360;
+            transition: all 1s ease;
+        }
+        header+nav li:hover::after{
+            width: 100%;
+            
+        }
+        /* styling the main */
+        main{
+            width: 80%;
+            margin: auto;
+            display: flex;
+
+        }
+        main>article{
+            margin: 100px 40px 0px 0px;
+        }
+        main>aside{
+            margin: 180px 0px 0px 0px ;
+        }
+        main nav>ul>li{
+            list-style: none;
+            padding: 5px 0px;
+            border-bottom: 1px solid #ddd;
+        }
+        main li>a{
+            color: #777;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        main li>a>img{
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <!-- logo goes here -->
+        <h1>SPORTS NEWS</h1>
+    </header>
+    <!-- END HEADER SECTION -->
+
+    <!-- NAV SECTION -->
+    <nav>
+        <!-- links goes here -->
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SPORT</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- END NAV SECTION -->
+
+    <!-- MAIN SECTION -->
+    <main>
+        <article>
+            <h1>A Dream Comes True. Manchester City wins Champions League</h1>
+            <article>
+
+            </article>
+            <article></article>
+            <article></article>
+        </article>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href=""><img src="https://image.cnbcfm.com/api/v1/image/107254675-1686449903903-gettyimages-1258598431-AA_11062023_1232871.jpeg?v=1686450026&w=740&h=416&ffmt=webp&vtcrop=y" alt=""><h4>Manchester City wins FA cup by mistake</h4></a></li>
+                    <li><a href=""><img src="https://image.cnbcfm.com/api/v1/image/107254675-1686449903903-gettyimages-1258598431-AA_11062023_1232871.jpeg?v=1686450026&w=740&h=416&ffmt=webp&vtcrop=y" alt=""><h4>Manchester city wins premier League</h4></a></li>
+                    <li><a href=""><img src="https://image.cnbcfm.com/api/v1/image/107254675-1686449903903-gettyimages-1258598431-AA_11062023_1232871.jpeg?v=1686450026&w=740&h=416&ffmt=webp&vtcrop=y" alt=""><h4>Inter Milan loses to Manchester City</h4></a></li>
+                    <li><a href=""><img src="https://image.cnbcfm.com/api/v1/image/107254675-1686449903903-gettyimages-1258598431-AA_11062023_1232871.jpeg?v=1686450026&w=740&h=416&ffmt=webp&vtcrop=y" alt=""><h4>Arsenal loses the Premier league</h4></a></li>
+                    <li><a href=""><img src="https://image.cnbcfm.com/api/v1/image/107254675-1686449903903-gettyimages-1258598431-AA_11062023_1232871.jpeg?v=1686450026&w=740&h=416&ffmt=webp&vtcrop=y" alt=""><h4>Manchester united let go of ther best keeper</h4></a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <!-- END MAIN SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <p>
+            Copyright  made by EliteTechDev.
+        </p>
+    </footer>
+</body>
+</html>
